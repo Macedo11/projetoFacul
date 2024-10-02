@@ -1,0 +1,7 @@
+* { /* essa TAG que inclui no css indica uma tag global para que o site entenda a estilização padrão do site como: */
+    background-color: rgb(236, 236, 236); /*Definindo a cor de fundo do projeto como branco um pouco mais escuro*/
+    font-family: "Inter", sans-serif; /*Definindo uma fonte padrão para todo o projeto*/
+    margin: 0; /*Definindo como padrão o projeto sem margens para não atrapalhar */
+    padding: 0; /*Definindo como padrão o espaço interno de cada tag como sem para não atrapalhar*/
+}
+
