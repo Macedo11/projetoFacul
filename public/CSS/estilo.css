@@ -1,7 +1,50 @@
-* { /* essa TAG que inclui no css indica uma tag global para que o site entenda a estilização padrão do site como: */
-    background-color: rgb(236, 236, 236); /*Definindo a cor de fundo do projeto como branco um pouco mais escuro*/
-    font-family: "Inter", sans-serif; /*Definindo uma fonte padrão para todo o projeto*/
-    margin: 0; /*Definindo como padrão o projeto sem margens para não atrapalhar */
-    padding: 0; /*Definindo como padrão o espaço interno de cada tag como sem para não atrapalhar*/
+* { /* Aplica estilo global a todas as tags */
+    background-color: rgb(236, 236, 236); /* Cor de fundo do site */
+    font-family: "Inter", sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento interno padrão */
 }
 
+nav {
+    height: 50px; /* Altura da barra de navegação */
+    display: flex; /* Alinha elementos na barra de navegação */
+    justify-content: space-between; /* Espaça logo à esquerda e menu à direita */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #FBE80E; /* Cor de fundo da barra */
+}
+
+nav img {
+    width: 170px; /* Largura da imagem (logo) */
+    margin-left: 10px; /* Espaçamento à esquerda */
+    background-color: transparent; /* Fundo da imagem transparente */
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Alinha itens da lista em linha */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    flex-grow: 1; /* Ocupar espaço restante */
+    justify-content: center; /* Centraliza itens li */
+    background-color: transparent; /* Fundo do ul transparente */
+}
+
+nav li {
+    margin: 0 15px; /* Espaçamento entre itens da lista */
+    font-weight: bold; /* Texto em negrito */
+    background-color: transparent; /* Fundo de cada item transparente */
+}
+
+nav button {
+    padding: 10px; /* Espaçamento interno do botão */
+    width: 90px; /* Largura do botão */
+    border: none; /* Remove borda padrão */
+    background-color: #65C306; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border-radius: 5px; /* Arredonda cantos do botão */
+}
+
+nav button:hover {
+    cursor: pointer; /* Muda cursor ao passar o mouse */
+    background-color: #509609; /* Muda cor ao passar o mouse */
+}
