@@ -21,35 +21,29 @@ nav {
     padding: 10px; /* Espaçamento interno */
     background-color: #FBE80E; /* Cor de fundo da barra */
     position: fixed; /* Fixar a barra no topo */
-    top: 0; /* Posicionar no topo da página */
-    left: 0; /* Alinhar à esquerda */
     width: 100%; /* Ocupar toda a largura da tela */
     z-index: 1000; /* Manter a barra acima de outros elementos */
+    justify-content: space-between; /* Espaça os itens de maneira adequada */
 }
 
 nav img {
     width: 170px; /* Largura da imagem (logo) */
-    margin-left: 10px; /* Espaçamento à esquerda */
-    background-color: transparent; /* Fundo da imagem transparente */
 }
 
 nav ul {
     list-style: none; /* Remove marcadores da lista */
     display: flex; /* Alinha itens da lista em linha */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    flex-grow: 1; /* Ocupar espaço restante */
-    justify-content: center; /* Centraliza itens li */
-    background-color: transparent; /* Fundo do ul transparente */
+    flex-grow: 1; /* Permite que a lista ocupe o espaço restante */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
 }
 
 nav li {
     margin: 0 15px; /* Espaçamento entre itens da lista */
     font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo de cada item transparente */
 }
 
 nav button {
-    margin-right: 20px;
+    margin-right: 30px; /* Espaçamento à direita do botão */
     padding: 10px; /* Espaçamento interno do botão */
     width: 90px; /* Largura do botão */
     border: none; /* Remove borda padrão */
@@ -57,6 +51,7 @@ nav button {
     color: white; /* Cor do texto */
     border-radius: 5px; /* Arredonda cantos do botão */
 }
+
 
 nav button:hover {
     cursor: pointer; /* Muda cursor ao passar o mouse */
