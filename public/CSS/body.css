@@ -1,0 +1,376 @@
+:root {
+    --yellow: #FBE80E; /* Variável para a cor amarela */
+    --green: #55AA00; /* Variável para a cor verde */
+    --light-green: #72D60F; /* Variável para a cor verde claro */
+    --mostarda: #D3C203; /* Variável para a cor mostarda */
+}
+
+h1, h2 {
+    color: var(--mostarda); /* Cor para h1 e h2 */
+}
+
+/* CUIDADOS */
+.cuidados {
+    margin-top: -30px;
+    background-color: #FFFABC; /* Cor de fundo */
+    padding: 40px; /* Preenchimento interno */
+    width: auto;
+    text-align: center; /* Alinhamento do texto */
+    border-radius: 25px; /* Cantos arredondados */
+}
+
+.div-cuidados {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical dos itens */
+    padding: 100px 20px; /* Preenchimento interno */
+}
+
+.img-cuidados {
+    width: 500px; /* Largura da imagem */
+}
+
+.p-cuidados {
+    padding: 10px 25px; /* Preenchimento interno */
+    line-height: 20px; /* Altura da linha */
+}
+
+.txt-limpeza > p, .txt-pq-limpar > p {
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+
+/* CALCULAR CEP */
+.container-cep {
+    margin-top: -30px;
+    background-color: #D2FFA6; /* Cor de fundo */
+    border-radius: 25px; /* Cantos arredondados */
+    height: 370px; /* Altura do contêiner */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centralização horizontal */
+    flex-direction: column; /* Direção vertical */
+    align-items: center; /* Centralização vertical */
+}
+
+.container-cep > p {
+    color: var(--light-green); /* Cor do texto */
+    font-weight: 700; /* Peso da fonte */
+    text-decoration: underline; /* Texto sublinhado */
+}
+
+.container-cep > .div-cep {
+    background-color: white; /* Cor de fundo */
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.342); /* Sombra */
+    border-radius: 25px; /* Cantos arredondados */
+    width: 450px; /* Largura do contêiner */
+    height: 130px; /* Altura do contêiner */
+    padding: 25px; /* Preenchimento interno */
+    margin: 40px; /* Margem ao redor */
+}
+
+.div-cep > p {
+    color: #6A6A6A; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    padding: 18px; /* Preenchimento interno */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+.calc-cep {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.calc-cep > fieldset {
+    width: 70%; /* Largura do fieldset */
+    height: 50px; /* Altura do fieldset */
+    text-align: left; /* Alinhamento do texto */
+}
+
+.calc-cep > .btn-cep {
+    background-color: var(--light-green); /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418); /* Sombra do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    border-radius: 10px; /* Cantos arredondados */
+    margin-top: 5px; /* Margem superior */
+    width: 90px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
+}
+
+.btn-cep:hover {
+    background-color: var(--green); /* Cor do botão ao passar o mouse */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+}
+
+/* ANTES E DEPOIS */
+.antes-depois {
+    margin: 70px; /* Margem ao redor */
+}
+
+.antes-depois > p {
+    color: var(--light-green); /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+    padding: 0 90px 30px; /* Preenchimento interno */
+}
+
+.antes-depois > div {
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Permitir quebra de linha */
+    justify-content: center; /* Centralização horizontal */
+}
+
+.antes-depois > div > img {
+    max-width: 450px; /* Largura máxima da imagem */
+    padding: 10px; /* Preenchimento ao redor da imagem */
+}
+
+/* FORMULÁRIO */
+.form-container {
+    max-width: 100%; /* Largura total do contêiner */
+    height: auto; /* Altura automática para ser responsivo */
+    display: flex; /* Layout flexível */
+    align-items: stretch; /* Alinhamento vertical completo */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    background-color: var(--yellow); /* Cor de fundo */
+}
+
+.img-form {
+    width: 50%; /* Largura da imagem definida como 50% */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.img-form > img {
+    max-width: 100%; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.form-div {
+    width: 50%; /* Largura do formulário definida como 50% */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+
+    flex-direction: column; /* Direção vertical para o formulário */
+    padding: 20px; /* Adiciona um preenchimento interno */
+}
+
+form {
+    background-color: white; /* Cor de fundo do formulário */
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.24); /* Sombra do formulário */
+    width: 100%; /* Largura total do formulário */
+    border-radius: 15px; /* Cantos arredondados */
+    padding: 15px; /* Preenchimento interno */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Direção vertical */
+    align-items: center; /* Centralização vertical */
+}
+
+form > p {
+    font-weight: 800; /* Peso da fonte */
+}
+
+fieldset {
+    font-size: 11px; /* Tamanho da fonte */
+    width: 100%; /* Largura total do fieldset */
+    padding: 0 6px 0 15px; /* Preenchimento interno */
+    margin: 10px 0; /* Margem ao redor */
+    border: solid 1.5px #ccc; /* Borda */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+input, textarea {
+    font-size: 10px; /* Tamanho da fonte */
+    width: 100%; /* Largura total do input e textarea */
+    border: solid 1px #ccc; /* Borda */
+    padding: 10px; /* Preenchimento interno */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#msg {
+    height: 100px; /* Altura do textarea */
+}
+
+#form-btn {
+    background-color: var(--light-green); /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418); /* Sombra do texto */
+    font-size: 13px; /* Tamanho da fonte */
+    padding: 5px; /* Preenchimento interno */
+    margin-top: 20px; /* Margem superior */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#form-btn:hover {
+    background-color: var(--green); /* Cor do botão ao passar o mouse */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+}
+
+
+.form-div {
+    width: 50%; /* Largura da div do formulário definida como 50% */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Direção da flexbox em coluna */
+    padding: 20px; /* Adiciona um preenchimento interno */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+
+form {
+    margin-left: 30%;
+    background-color: white; /* Cor de fundo do formulário */
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.24); /* Sombra do formulário */
+    width: 270px; /* Largura do formulário */
+    height: auto; /* Altura do formulário */
+    border-radius: 15px; /* Cantos arredondados */
+    padding: 15px; /* Preenchimento interno */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Direção vertical */
+    align-items: center; /* Centralização vertical */
+}
+
+form > p {
+    font-weight: 800; /* Peso da fonte */
+}
+
+fieldset {
+    font-size: 11px; /* Tamanho da fonte */
+    width: 60px; /* Largura do fieldset */
+    padding: 0 6px 0 15px; /* Preenchimento interno */
+    margin: 10px; /* Margem ao redor */
+    border: solid 1.5px #ccc; /* Borda */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+input {
+    font-size: 10px; /* Tamanho da fonte */
+    width: 200px; /* Largura do input */
+    border: 0; /* Sem borda */
+    padding: 10px; /* Preenchimento interno */
+}
+
+#msg {
+    padding-bottom: 100px; /* Margem inferior */
+    border: solid 0; /* Sem borda */
+    width: 220px; /* Largura da mensagem */
+    font-size: 10px; /* Tamanho da fonte */
+}
+
+#form-btn {
+    background-color: var(--light-green); /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418); /* Sombra do texto */
+    font-size: 13px; /* Tamanho da fonte */
+    padding: 5px; /* Preenchimento interno */
+    margin-top: 20px; /* Margem superior */
+    width: 150px; /* Largura do botão */
+    height: 30px; /* Altura do botão */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+#form-btn:hover {
+    background-color: var(--green); /* Cor do botão ao passar o mouse */
+    cursor: pointer; /* Cursor em forma de ponteiro */
+}
+
+/* RODAPÉ */
+footer { 
+    font-family: "Inter", sans-serif; /* Estilo da Fonte */
+    font-size: 13px; /* Tamanho da fonte */
+    bottom: 0; /* Posiciona no final da página */
+    height: 170px; /* Altura do rodapé */
+    width: 100%; /* Largura total do rodapé */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+footer > img {
+    width: 150px; /* Largura da imagem do rodapé */
+    padding-right: 30px; /* Margem direita */
+}
+
+/* Estilos responsivos para telas com largura máxima de 1000px */
+@media (max-width: 1000px) {
+    .cuidados {
+        padding: 30px 10px; /* Ajusta o padding da seção de cuidados */
+    }
+    
+    .img-cuidados {
+        width: 350px; /* Define a largura das imagens de cuidados */
+    }
+}
+
+/* Estilos responsivos para telas com largura máxima de 840px */
+@media (max-width: 840px) {
+    /* ANTES E DEPOIS */
+    .antes-depois > p {
+        padding: 0 0 20px; /* Adiciona padding ao parágrafo da seção "Antes e Depois" */
+    }
+
+    .antes-depois > div > img {
+        max-width: 280px; /* Define a largura máxima das imagens na seção "Antes e Depois" */
+    }
+
+    /* FORMULÁRIO */
+    .img-form {
+        display: none; /* Oculta a imagem ao lado do formulário */
+    }
+}
+
+/* Estilos responsivos para telas com largura máxima de 800px */
+@media (max-width: 800px) {
+    .div-cuidados {
+        padding: 45px 5px 10px; /* Ajusta o padding das divs de cuidados */
+    }
+
+    .img-cuidados {
+        display: none; /* Oculta as imagens de cuidados */
+    }
+}
+
+/* Estilos responsivos para telas com largura máxima de 550px */
+@media (max-width: 550px) {
+    .p-cuidados {
+        padding: 0; /* Remove o padding dos parágrafos de cuidados */
+    }
+
+    /* CALCULAR CEP */
+    .container-cep > .div-cep {
+        width: 270px; /* Define a largura da div de CEP */
+        height: 100px; /* Define a altura da div de CEP */
+    }
+
+    .container-cep > p {
+        font-size: 14px; /* Ajusta o tamanho da fonte do parágrafo da seção de CEP */
+    }
+
+    .div-cep > p {
+        font-size: 12px; /* Ajusta o tamanho da fonte do parágrafo dentro da div de CEP */
+        padding: 0; /* Remove o padding do parágrafo dentro da div de CEP */
+    }
+
+    .calc-cep > fieldset {
+        width: 20%; /* Define a largura do fieldset no formulário de CEP */
+        margin: 5px; /* Adiciona margem ao fieldset */
+    }
+
+    .calc-cep > fieldset > input {
+        width: 140px; /* Define a largura do campo de entrada no formulário de CEP */
+    }
+
+    /* RODAPÉ */
+    footer {
+        display: flex; /* Usa flexbox para organizar o conteúdo do rodapé */
+        flex-direction: column; /* Alinha os itens do rodapé verticalmente */
+        font-size: 12px; /* Ajusta o tamanho da fonte do rodapé */
+    }
+
+    footer > img {
+        padding: 0 0 10px; /* Adiciona padding na parte inferior da imagem do rodapé */
+        width: 110px; /* Define a largura da imagem do rodapé */
+    }
+}
+

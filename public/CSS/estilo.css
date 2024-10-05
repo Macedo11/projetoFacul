@@ -1,8 +1,15 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * { /* Aplica estilo global a todas as tags */
-    background-color: rgb(236, 236, 236); /* Cor de fundo do site */
     font-family: "Inter", sans-serif; /* Fonte padrão */
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove preenchimento interno padrão */
+}
+
+body {
+    background-color: white;
 }
 
 /*Navbar*/
@@ -14,35 +21,29 @@ nav {
     padding: 10px; /* Espaçamento interno */
     background-color: #FBE80E; /* Cor de fundo da barra */
     position: fixed; /* Fixar a barra no topo */
-    top: 0; /* Posicionar no topo da página */
-    left: 0; /* Alinhar à esquerda */
     width: 100%; /* Ocupar toda a largura da tela */
     z-index: 1000; /* Manter a barra acima de outros elementos */
+    justify-content: space-between; /* Espaça os itens de maneira adequada */
 }
 
 nav img {
     width: 170px; /* Largura da imagem (logo) */
-    margin-left: 10px; /* Espaçamento à esquerda */
-    background-color: transparent; /* Fundo da imagem transparente */
 }
 
 nav ul {
     list-style: none; /* Remove marcadores da lista */
     display: flex; /* Alinha itens da lista em linha */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    flex-grow: 1; /* Ocupar espaço restante */
-    justify-content: center; /* Centraliza itens li */
-    background-color: transparent; /* Fundo do ul transparente */
+    flex-grow: 1; /* Permite que a lista ocupe o espaço restante */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
 }
 
 nav li {
     margin: 0 15px; /* Espaçamento entre itens da lista */
     font-weight: bold; /* Texto em negrito */
-    background-color: transparent; /* Fundo de cada item transparente */
 }
 
 nav button {
-    margin-right: 20px;
+    margin-right: 30px; /* Espaçamento à direita do botão */
     padding: 10px; /* Espaçamento interno do botão */
     width: 90px; /* Largura do botão */
     border: none; /* Remove borda padrão */
@@ -51,9 +52,80 @@ nav button {
     border-radius: 5px; /* Arredonda cantos do botão */
 }
 
+
 nav button:hover {
     cursor: pointer; /* Muda cursor ao passar o mouse */
     background-color: #509609; /* Muda cor ao passar o mouse */
+}
+
+/*Cabeçalho*/
+
+.cabecalho {
+    display: flex; /* Usa flexbox para alinhar os filhos em linha */
+    background-color: #FBE80E; /* Cor de fundo do cabeçalho */
+    width: auto;
+    min-height: 70vh; /* Altura mínima do cabeçalho */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    padding: 20px; /* Adiciona um preenchimento interno para evitar que o texto fique colado nas bordas */
+}
+
+.texto h1, p {
+    padding: 20px;
+}
+
+.texto p {
+    font-size: 17px; /* Define o tamanho da fonte dos parágrafos */
+}
+
+.texto h1, i {
+    color: black;
+    font-family: "Rubik", sans-serif; /* Define a fonte específica para h1 e i */
+}
+
+.texto button {
+    padding: 15px; /* Adiciona um preenchimento interno ao botão */
+    margin: 15px; /* Adiciona uma margem ao redor do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+}
+
+#botao-1 {
+    padding: 15px 70px; /* Padding superior/inferior e direito/esquerdo para o botão 1 */
+    display: inline-block; /* Permite que o botão se comporte como um bloco, mantendo a centralização */
+    text-align: center; /* Centraliza o texto horizontalmente dentro do botão */
+    background-color: #65C306; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-size: 17px; /* Define o tamanho da fonte do botão */
+}
+
+#botao-1:hover {
+    background-color: #54a306; /* Cor de fundo do botão quando o mouse passa sobre ele */
+}
+
+#botao-2 {
+    padding: 15px 70px; /* Padding superior/inferior e direito/esquerdo para o botão 2 */
+    display: inline-block; /* Permite que o botão se comporte como um bloco, mantendo a centralização */
+    text-align: center; /* Centraliza o texto horizontalmente dentro do botão */
+    background-color: transparent; /* Cor de fundo do botão */
+    border: 3px solid black; /* Define uma borda preta de 3 pixels para o botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-size: 17px; /* Define o tamanho da fonte do botão */
+}
+
+#botao-2:hover {
+    background-color: #2929296c; /* Cor de fundo do botão 2 quando o mouse passa sobre ele */
+}
+
+.imagem {
+    background-color: transparent; /* Mantém o fundo transparente para o contêiner de imagem */
+}
+
+.imagem img {
+    box-shadow: -29px 19px 33px -26px rgba(0,0,0,0.75); /* Adiciona sombra à imagem */
+    background-color: transparent; /* Mantém o fundo transparente para a imagem */
+    border-radius: 40px; /* Arredonda os cantos da imagem */
+    margin-left: 100px; /* Adiciona uma margem à esquerda da imagem */
 }
 
 
