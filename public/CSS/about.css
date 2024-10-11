@@ -32,3 +32,74 @@
 .cabecalho-about h1 {
     font-size: 50px;
 }
+
+.about {
+    display: flex;
+    padding: 50px;
+}
+
+.about .form-div {
+    width: 50%; /* Largura da div do formulário definida como 50% */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Direção da flexbox em coluna */
+    padding: 20px; /* Adiciona um preenchimento interno */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+.about article p {
+    max-width: 800px;
+    width: auto;
+}
+
+.about article h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+
+.pontos {
+    margin-top: 20px;
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    gap: 100px; /* Define o espaçamento entre as divs */
+}
+
+.pontos li {
+    margin-top: 20px;
+    width: 210px;
+}
+
+.pontos h3 {
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.pontos img {
+
+    width: 90px;
+}
+
+#diamon img {
+    width: 150px;
+}
+
+.footer-about { 
+    margin-top: 50px;
+    font-family: "Inter", sans-serif; /* Estilo da Fonte */
+    font-size: 13px; /* Tamanho da fonte */
+    bottom: 0; /* Posiciona no final da página */
+    height: 100px; /* Altura do rodapé */
+    width: 100%; /* Largura total do rodapé */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Centraliza horizontalmente */
+    background-color: var(--yellow);
+}
+
+.footer-about > img {
+    width: 150px; /* Largura da imagem do rodapé */
+    padding-right: 30px; /* Margem direita */
+}
+
+

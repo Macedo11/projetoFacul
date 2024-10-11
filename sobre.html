@@ -24,15 +24,80 @@
             <button disabled>Login</button> <!-- Botão de login -->
         </nav> <!-- Tag utilizada para fechar a barra de navegação -->
 
-        <section class="cabecalho-about">
+        <header class="cabecalho-about">
             <img src="./public/IMG/wallpaper sofá.png" alt="">
             <div>
                 <h1>Sobre Nós</h1>
             </div>
+        </header>
+
+
+        <section class="about">
+                
+                <article>
+                    <h1>Quem somos</h1>
+                    <hr>
+                    <p>A empresa foi fundada durante a pandemia, quando percebemos uma oportunidade no setor de serviços, com as pessoas passando mais tempo em casa. Identificamos uma demanda crescente de clientes preocupados em manter seus móveis em um ambiente mais leve e limpo, e decidimos atender a essa necessidade. </p>
+                    <div class="pontos">
+                        <div>
+                            <img src="./public/IMG/alvo_flecha.png" alt="">
+                            <h3>Missão</h3>
+                            <ul>
+                                <li>Fornecer aos clientes um serviço de lavagens, limpezas, higienização, etc., de qualidade;</li>
+                                <li>Proporcionar maior comodismo com nossos serviços feitos pelas mãos de profissionais qualificados. </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="./public/IMG/alvo.png" alt="">
+                            <h3>Visão</h3>
+                            <ul>
+                                <li>Ser referência no ramo graças à qualidade dos serviços prestado e profissionalismo;</li>
+                                <li>Contar sempre com os melhores profissionais;
+                                    Trabalhar para estar sempre em evolução. </li>
+                            </ul>
+                        </div>
+                        <div id="diamon">
+                            <img src="./public/IMG/daimond.png" >
+                            <h3>Valores</h3>
+                            <ul>
+                                <li>Profissionalismo;</li>
+                                <li>Comprometimento;</li>
+                                <li>Satisfação dos clientes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                 <div>
+                    <div class="form-div"> <!-- Container para o formulário de contato -->
+                        <form action="#"> <!-- Início do formulário -->
+                            <p>Entre em Contato!</p> <!-- Mensagem de convite para contato -->
+                            <fieldset> <!-- Agrupa elementos relacionados no formulário -->
+                                <legend>Nome</legend> <!-- Título do campo de entrada -->
+                                <label for="nome"></label> <!-- Label associado ao campo de entrada -->
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome"> <!-- Campo de entrada para o nome -->
+                            </fieldset>
+                
+                            <fieldset> <!-- Agrupa elementos relacionados no formulário -->
+                                <legend>Email</legend> <!-- Título do campo de entrada -->
+                                <label for="email"></label> <!-- Label associado ao campo de entrada -->
+                                <input type="email" name="email" id="email" placeholder="Digite seu E-mail"> <!-- Campo de entrada para o email -->
+                            </fieldset>
+                
+                            <fieldset> <!-- Agrupa elementos relacionados no formulário -->
+                                <legend>Mensagem</legend> <!-- Título do campo de entrada -->
+                                <label for="msg"></label> <!-- Label associado ao campo de entrada -->
+                                <textarea name="msg" id="msg" placeholder="Digite sua mensagem"></textarea> <!-- Área de texto para a mensagem -->
+                            </fieldset>
+                
+                            <input type="submit" value="Enviar" id="form-btn"> <!-- Botão para enviar o formulário -->
+                        </form>
+                    </div>
+                 </div>
         </section>
 
       
-        <footer> <!-- RODAPÉ -->
+        <footer class="footer-about"> <!-- RODAPÉ -->
             <img src="./public/IMG/Logo_sem_fundo.png" alt="Logo EF"> <!-- Adiciona a logo sem fundo -->
             <i>© 2024 E.F MY CLEANING. all rights reserved</i> <!-- Direitos autorais -->
         </footer>
