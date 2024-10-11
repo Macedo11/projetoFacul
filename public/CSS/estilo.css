@@ -39,7 +39,18 @@ nav ul {
 
 nav li {
     margin: 0 15px; /* Espaçamento entre itens da lista */
+    
+}
+
+ li a {
+    text-decoration: none;
     font-weight: bold; /* Texto em negrito */
+    color: black;
+    transition: 0.5s;
+}
+
+li a:hover{
+    color: rgb(82, 82, 82);
 }
 
 nav button {
