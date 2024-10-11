@@ -165,6 +165,8 @@ form {
     display: flex; /* Layout flexível */
     flex-direction: column; /* Direção vertical */
     align-items: center; /* Centralização vertical */
+    outline: none; /* Remove a borda de foco */
+    background-color: transparent; /* Define o fundo transparente */
 }
 
 form > p {
@@ -185,6 +187,8 @@ input, textarea {
     width: 100%; /* Largura total do input e textarea */
     border: solid 1px #ccc; /* Borda */
     padding: 10px; /* Preenchimento interno */
+    outline: none; /* Remove a borda de foco */
+    background-color: transparent; /* Define o fundo transparente */
     border-radius: 5px; /* Cantos arredondados */
 }
 
