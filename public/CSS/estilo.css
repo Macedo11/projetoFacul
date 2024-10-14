@@ -15,6 +15,7 @@ body {
 /*Navbar*/
 
 nav {
+    top: 0;
     height: 50px; /* Altura da barra de navegação */
     display: flex; /* Alinha elementos na barra de navegação */
     align-items: center; /* Centraliza verticalmente */
@@ -24,6 +25,7 @@ nav {
     width: 100%; /* Ocupar toda a largura da tela */
     z-index: 1000; /* Manter a barra acima de outros elementos */
     justify-content: space-between; /* Espaça os itens de maneira adequada */
+    border-bottom: 3px solid rgb(66, 66, 66);
 }
 
 nav img {
@@ -42,7 +44,7 @@ nav li {
     
 }
 
-li a {
+ li a {
     text-decoration: none;
     font-weight: bold; /* Texto em negrito */
     color: black;
@@ -78,6 +80,7 @@ nav button:hover {
     min-height: 70vh; /* Altura mínima do cabeçalho */
     align-items: center; /* Alinha verticalmente os itens ao centro */
     padding: 20px; /* Adiciona um preenchimento interno para evitar que o texto fique colado nas bordas */
+    margin-bottom: -30px;
 }
 
 .texto h1, p {
@@ -138,3 +141,6 @@ nav button:hover {
     border-radius: 40px; /* Arredonda os cantos da imagem */
     margin-left: 100px; /* Adiciona uma margem à esquerda da imagem */
 }
+
+
+
