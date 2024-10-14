@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./public/CSS/login.css">
+</head>
+<body>
+    <nav id="navbar"> <!-- Tag utilizada para iniciar uma barra de navegação -->
+        <a href="index.html">
+            <img src="./public/IMG/Logo_sem_fundo.png" alt="">
+        </a> <!-- Tag de imagem do logo -->
+        <ul> <!-- Tag utilizada para criar uma lista não ordenada de itens de navegação -->
+            <li> <a href="./sobre.html">Sobre nós</a> </li> <!-- Item da lista: sobre a empresa -->
+            <li> <a href="./cuidado.html">Cuidados</a> </li> <!-- Item da lista: cuidados com os produtos ou serviços -->
+            <li> <a href="./sobre.html">Orçamento</a> </li> <!-- Item da lista: opção para solicitar orçamento -->
+            <li> <a href="./sobre.html">Fale Conosco</a> </li> <!-- Item da lista: contato com a empresa -->
+        </ul>
+    </nav> <!-- Tag utilizada para fechar a barra de navegação -->
+
+    <form action="#"> <!-- Formulário -->
+        <h1>Login</h1> <!-- Título do formulário -->
+        <fieldset> <!-- Agrupa elementos relacionados no formulário -->
+            <legend>Nome</legend> <!-- Título do campo de entrada -->
+            <label for="iname"></label> <!-- Label associado ao campo de entrada -->
+            <input type="text" name="name" id="iname" placeholder="Digite seu nome"> <!-- Campo de entrada para o nome -->
+        </fieldset> 
+        <fieldset> <!-- Agrupa elementos relacionados no formulário -->
+            <legend>Email</legend> <!-- Título do campo de entrada -->
+            <label for="iemail"></label> <!-- Label associado ao campo de entrada -->
+            <input type="email" name="email" id="iemail" placeholder="Digite seu Email"> <!-- Campo de entrada para o email -->
+        </fieldset>
+        <fieldset> <!-- Agrupa elementos relacionados no formulário -->
+            <legend>Senha</legend> <!-- Título do campo de entrada -->
+            <label for="ipassword"></label> <!-- Label associado ao campo de entrada -->
+            <input type="password" name="password" id="ipassword" placeholder="Digite sua senha"> <!-- Campo de entrada para senha -->
+        </fieldset>
+        <fieldset> <!-- Agrupa elementos relacionados no formulário -->
+            <legend>Confirmar senha</legend> <!-- Título do campo de entrada -->
+            <label for="iconfPassword"></label> <!-- Label associado ao campo de entrada -->
+            <input type="password" name="confPassword" id="iconfPassword" placeholder="Confirme sua Senha"> <!-- Campo de entreda para confirmar senha -->
+        </fieldset>
+
+        <input type="button" value="Enviar" id="btn-form"> <!-- Botão para enviar o formulário -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --green: #55AA00; /* Variável para a cor verde */
+    --light-green: #72D60F; /* Variável para a cor verde claro */
+}
+
+* { /* Aplica estilo global a todas as tags */
+    font-family: "Inter", sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento interno padrão */
+}
+
+body {
+    background-color: lightgray;
+}
+
+/*Navbar*/
+
+nav {
+    height: 50px; /* Altura da barra de navegação */
+    display: flex; /* Alinha elementos na barra de navegação */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 50px;
+    background-color: #FBE80E; /* Cor de fundo da barra */
+    width: 100%; /* Ocupar toda a largura da tela */
+    z-index: 1000; /* Manter a barra acima de outros elementos */
+    justify-content: space-between; /* Espaça os itens de maneira adequada */
+}
+
+nav img {
+    width: 170px; /* Largura da imagem (logo) */
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Alinha itens da lista em linha */
+    flex-grow: 1; /* Permite que a lista ocupe o espaço restante */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
+}
+
+nav li {
+    margin: 0 15px; /* Espaçamento entre itens da lista */
+}
+
+li a {
+    text-decoration: none; /*Exclui todo o estilo do a*/
+    font-weight: bold; /* Texto em negrito */
+    color: black; 
+    transition: 0.5s; 
+}
+
+li a:hover{
+    color: rgb(82, 82, 82);
+}
+
+nav button {
+    margin-right: 30px; /* Espaçamento à direita do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    width: 90px; /* Largura do botão */
+    border: none; /* Remove borda padrão */
+    background-color: #65C306; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border-radius: 5px; /* Arredonda cantos do botão */
+}
+
+nav button:hover {
+    cursor: pointer; /* Muda cursor ao passar o mouse */
+    background-color: #509609; /* Muda cor ao passar o mouse */
+}
+
+/*Formulário*/
+form {
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.397); /*Sombra no formulário*/
+    width: 300px; /*Tamanho horizontal do formulário*/
+    height: 400px; /*Tamanho vertizal do formulário*/
+    border-radius: 15px; /*Aredondamento das bordas*/
+    display: flex; /*Usa flexbox para alinhar os filhos em linha*/
+    flex-direction: column; /*Alinha os elementos em coluna*/
+    justify-content: space-evenly; /*Alinha elementos com espaço uniforme*/
+    align-items: center; /*Alinha elementos ao centro*/
+    margin: auto; /*Alinha o formulário horizontalmente*/
+    padding: 15px; /*Espaçamento dentro do formulário*/
+}
+
+form h1 {
+    text-align: center; /*Alinha texto no centro*/
+}
+
+fieldset {
+    font-size: 13px; /*Tamanho da fonte*/
+    width: 85%; /*Ocupa 85% do tamanho do formuário*/
+    height: 50px; /*Tamanho vertical*/
+    border-radius: 15px; /*Arredodamento da borda*/
+    border: solid 1.5px #ccc; /*Define a espessura e cor da borda*/
+    padding: 0px 10px; /*Espaçamento no fieldset*/
+}
+
+fieldset input {
+    font-size: 11.5px; /*Tamanho da fonte*/
+    width: 100%; /*Tamanho horizontal de 100% do fieldset*/
+    height: 25px; /*Tamanho vertical*/
+    border: none; /*Exclui a borda*/
+}
+
+#btn-form {
+    background-color: var(--light-green); /*Cor de fundo do botão*/
+    color: white; /*Cor da fonte*/
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.603); /*Sombra da fonte*/
+    border: none; /*Exclui a borda da fonte*/
+    width: 120px; /*Tamanho horizontal do botão*/
+    height: 30px; /*Tamanho vertical do botão*/
+}
+
+#btn-form:hover {
+    background-color: var(--green);
+}
