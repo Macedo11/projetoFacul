@@ -114,8 +114,9 @@ fieldset input {
     border: none; /*Exclui a borda da fonte*/
     width: 120px; /*Tamanho horizontal do botão*/
     height: 30px; /*Tamanho vertical do botão*/
+    cursor: pointer; /*Torna elemento cilcável*/
 }
 
 #btn-form:hover {
-    background-color: var(--green);
+    background-color: var(--green); /*Cor de fundo*/
 }
