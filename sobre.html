@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./public/CSS/body.css">
     <link rel="stylesheet" href="./public/CSS/about.css">
     <link rel="shortcut icon" href="./public/IMG/Logo.jpg" type="image/x-icon">
+    <script src="./public/JS/sobre.js" defer></script>
 </head>
     <body>
 
@@ -70,24 +71,24 @@
 
                  <div>
                     <div class="form-div about-form"> <!-- Container para o formulário de contato -->
-                        <form action="#"> <!-- Início do formulário -->
+                        <form id="formSobre"> <!-- Início do formulário -->
                             <p>Entre em Contato!</p> <!-- Mensagem de convite para contato -->
                             <fieldset> <!-- Agrupa elementos relacionados no formulário -->
                                 <legend>Nome</legend> <!-- Título do campo de entrada -->
                                 <label for="nome"></label> <!-- Label associado ao campo de entrada -->
-                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome"> <!-- Campo de entrada para o nome -->
+                                <input type="text" name="nameSobre" id="nome" placeholder="Digite seu nome"> <!-- Campo de entrada para o nome -->
                             </fieldset>
                 
                             <fieldset> <!-- Agrupa elementos relacionados no formulário -->
                                 <legend>Email</legend> <!-- Título do campo de entrada -->
                                 <label for="email"></label> <!-- Label associado ao campo de entrada -->
-                                <input type="email" name="email" id="email" placeholder="Digite seu E-mail"> <!-- Campo de entrada para o email -->
+                                <input type="email" name="emailSobre" id="email" placeholder="Digite seu E-mail"> <!-- Campo de entrada para o email -->
                             </fieldset>
                 
                             <fieldset> <!-- Agrupa elementos relacionados no formulário -->
                                 <legend>Mensagem</legend> <!-- Título do campo de entrada -->
                                 <label for="msg"></label> <!-- Label associado ao campo de entrada -->
-                                <textarea name="msg" id="msg" placeholder="Digite sua mensagem"></textarea> <!-- Área de texto para a mensagem -->
+                                <textarea name="msgSobre" id="msg" placeholder="Digite sua mensagem"></textarea> <!-- Área de texto para a mensagem -->
                             </fieldset>
                 
                             <input type="submit" value="Enviar" id="form-btn"> <!-- Botão para enviar o formulário -->

@@ -1,3 +1,5 @@
+//Formulário de login
+
 const formLogin = (event) => {
     event.preventDefault();
 
@@ -16,4 +18,4 @@ const formLogin = (event) => {
     }).then(() => alert('Dados enviados')).then(() => window.location.href = 'index.html');
 }
 
-document.querySelector('form').addEventListener('submit', formLogin)
+document.querySelector('form').addEventListener('submit', formLogin);
