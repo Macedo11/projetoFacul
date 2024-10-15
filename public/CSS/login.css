@@ -105,6 +105,7 @@ fieldset input {
     width: 100%; /*Tamanho horizontal de 100% do fieldset*/
     height: 25px; /*Tamanho vertical*/
     border: none; /*Exclui a borda*/
+    outline: none;
 }
 
 #btn-form {
