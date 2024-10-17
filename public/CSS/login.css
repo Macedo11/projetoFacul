@@ -104,7 +104,8 @@ fieldset input {
     font-size: 11.5px; /*Tamanho da fonte*/
     width: 100%; /*Tamanho horizontal de 100% do fieldset*/
     height: 25px; /*Tamanho vertical*/
-    border: none; /*Exclui a borda*/
+    border: none; /*Remove a borda*/
+    outline: none; /*Remove a borda de foco*/
 }
 
 #btn-form {
