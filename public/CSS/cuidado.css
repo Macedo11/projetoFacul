@@ -33,13 +33,17 @@
     font-size: 50px; /* Define o tamanho da fonte para o título */
 }
 
-/* CUIDADOS */
+/* CUIDADO */
 .cuidado {
     background-color: #FFFABC; /* Cor de fundo */
     padding: 40px; /* Preenchimento interno */
     width: auto;
     text-align: center; /* Alinhamento do texto */
     border-radius: 25px; /* Cantos arredondados */
+}
+
+.cuidado h1 {
+    font-size: 30px;
 }
 
 .div-cuidado {
@@ -52,7 +56,7 @@
     width: 500px; /* Largura da imagem */
 }
 
-.p-cuidados {
+.p-cuidado {
     padding: 10px 25px; /* Preenchimento interno */
     line-height: 20px; /* Altura da linha */
 }
