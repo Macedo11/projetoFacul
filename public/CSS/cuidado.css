@@ -1,0 +1,73 @@
+.cabecalho-cuidado {
+    position: relative; /* Define o contêiner como relativo para posicionar elementos filhos em relação a ele */
+}
+
+.cabecalho-cuidado img {
+    width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+    display: block; /* Remove o espaço em branco abaixo da imagem, causado pelo comportamento inline */
+}
+
+.cabecalho-cuidado::after {
+    content: ''; /* Cria um pseudo-elemento vazio */
+    position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece a imagem com um overlay semi-transparente */
+    z-index: 1; /* Coloca o overlay acima da imagem */
+}
+
+.cabecalho-cuidado div {
+    position: absolute; /* Posiciona o texto de forma absoluta sobre a imagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza a div no centro da imagem */
+    color: white; /* Define a cor do texto como branco */
+    z-index: 2; /* Coloca o texto acima do overlay */
+    width: 250px; /* Define uma largura fixa para a div */
+    text-align: center; /* Centraliza o texto dentro da div */
+}
+
+.cabecalho-cuidado h1 {
+    font-size: 50px; /* Define o tamanho da fonte para o título */
+}
+
+/* CUIDADO */
+.cuidado {
+    background-color: #FFFABC; /* Cor de fundo */
+    padding: 40px; /* Preenchimento interno */
+    width: auto;
+    text-align: center; /* Alinhamento do texto */
+    border-radius: 25px; /* Cantos arredondados */
+}
+
+.cuidado h1 {
+    font-size: 30px;
+}
+
+.cuidado article {
+    margin-top: 40px;
+}
+
+.div-cuidado {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical dos itens */
+    padding: 50px; /* Preenchimento interno */
+}
+
+.img-cuidado {
+    width: 500px; /* Largura da imagem */
+    border-radius: 19px 60px 19px 58px;
+    border: 4px solid #ffe96b;
+    box-shadow: -1px 2px 27px -10px rgba(0,0,0,0.75);
+}
+
+.p-cuidado {
+    padding: 10px 25px; /* Preenchimento interno */
+    line-height: 20px; /* Altura da linha */
+}
+
+.txt-limpeza > p, .txt-pq-limpar > p {
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
