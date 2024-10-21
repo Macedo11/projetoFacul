@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: #FBE80E;
+}
+
+header h1 {
+    color: rgb(59, 59, 59);
+}
+
+article {
+    border-radius: 80px;
+    background-color: white;
+    margin-top: -80px;
+}
+
+.container {
+    padding: 150px;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+}

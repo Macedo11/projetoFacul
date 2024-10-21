@@ -25,7 +25,6 @@ nav {
     width: 100%; /* Ocupar toda a largura da tela */
     z-index: 1000; /* Manter a barra acima de outros elementos */
     justify-content: space-between; /* Espaça os itens de maneira adequada */
-    border-bottom: 3px solid rgb(66, 66, 66);
 }
 
 nav img {
