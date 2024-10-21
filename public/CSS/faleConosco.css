@@ -19,6 +19,74 @@ article {
 .container {
     padding: 150px;
     height: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
+}
+
+/*FORM*/
+
+.form h4 {
+    margin-bottom: 20px;
+}
+
+
+form {
+    width: 400px;
+    height: auto; /* Altura do formulário */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Direção vertical */
+    outline: none; /* Remove a borda de foco */
+}
+
+fieldset {
+    font-size: 14px; /* Tamanho da fonte */
+    width: auto; /* Largura total do fieldset */
+    padding: 0 6px 0 15px; /* Preenchimento interno */
+    margin: 10px 0; /* Margem ao redor */
+    border: solid 1.5px #ccc; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+input, textarea {
+    font-size: 12px; /* Tamanho da fonte */
+    width: 100%; /* Largura total do input e textarea */
+    border: none; /* Remove a borda */
+    padding: 10px; /* Preenchimento interno */
+    outline: none; /* Remove a borda de foco */
+    background-color: transparent; /* Fundo transparente */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+textarea {
+    height: 90px;
+}
+
+input {
+    width: 100%; /* Largura específica para inputs */
+}
+
+.check h5 {
+    margin: 10px 0px 20px;
+}
+
+.check input {
+    width: 30px;
+    margin-bottom: 15px;
+}
+
+.check label {
+    font-size: 13px;
+}
+
+.form-btn {
+    color: white;
+    font-size: 20px;
+    width: auto;
+    background-color: rgb(31, 177, 31);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-btn:hover {
+    background-color: rgb(23, 110, 23);
 }

@@ -126,6 +126,7 @@ h1, h2 {
 
 /* RODAPÉ */
 footer { 
+    background-color: #fbe70e1c;
     font-family: "Inter", sans-serif; /* Estilo da Fonte */
     font-size: 13px; /* Tamanho da fonte */
     bottom: 0; /* Posiciona no final da página */
