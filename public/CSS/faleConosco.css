@@ -19,7 +19,7 @@ article {
 .container {
     padding: 150px;
     height: auto;
-    justify-content: space-around;
+    justify-content: space-evenly;
     display: flex;
 }
 
@@ -62,7 +62,7 @@ textarea {
 }
 
 input {
-    width: 100%; /* Largura específica para inputs */
+    width: 96%; /* Largura específica para inputs */
 }
 
 .check h5 {
@@ -79,14 +79,56 @@ input {
 }
 
 .form-btn {
-    color: white;
     font-size: 20px;
     width: auto;
-    background-color: rgb(31, 177, 31);
+    background-color: #FBE80E;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .form-btn:hover {
-    background-color: rgb(23, 110, 23);
+    background-color: #bdaf17;
+}
+
+
+/*CARD*/
+
+.telefone article{
+    border-radius: 20px;
+    background-color: #0000000c;
+    padding: 25px 25px 0 25px ;
+    width: 250px;
+    margin: 0;
+}
+
+.conteudo {
+    width: auto;
+}
+
+.conteudo, p, h3, button {
+    margin-bottom: 15px;
+}
+
+.telefone p {
+    padding: 0;
+    color: rgb(95, 95, 95);
+}
+
+.telefone h3 {
+    color: #D3C203;
+}
+
+.telefone button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FBE80E;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.telefone button:hover {
+    background-color: #bdaf17;
 }
