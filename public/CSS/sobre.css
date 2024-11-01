@@ -1,0 +1,332 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*==========================
+    ESTILOS GLOBAIS
+==========================*/
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+h1, h2 {
+    color: #D3C203;
+}
+
+/*==========================
+    CABEÇALHO (NAVBAR)
+==========================*/
+nav {
+    top: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #FBE80E;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 170px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+}
+
+nav li a:hover {
+    color: rgb(82, 82, 82);
+}
+
+nav button {
+    margin-right: 30px;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    background-color: #65C306;
+    color: white;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    cursor: pointer;
+    background-color: #509609;
+}
+
+/*==========================
+    SEÇÃO PRINCIPAL - CABEÇALHO ABOUT
+==========================*/
+.cabecalho-about {
+    position: relative;
+}
+
+.cabecalho-about img {
+    width: 100%;
+    display: block;
+}
+
+.cabecalho-about::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.cabecalho-about div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    width: 250px;
+    text-align: center;
+}
+
+.cabecalho-about h1 {
+    font-size: 50px;
+}
+
+/*==========================
+    SEÇÃO ABOUT
+==========================*/
+.about {
+    display: flex;
+    padding: 50px;
+}
+
+.about .form-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about article p {
+    max-width: 800px;
+}
+
+.about article h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.pontos {
+    margin-top: 20px;
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    gap: 100px;
+}
+
+.pontos li {
+    font-size: 15px;
+    margin-top: 20px;
+    width: 210px;
+}
+
+.pontos h3 {
+    margin: 20px 0;
+    text-align: center;
+    color: rgb(54, 54, 54);
+}
+
+.pontos img {
+    display: block;
+    margin: 0 auto;
+    width: 85px;
+}
+
+#diamon img {
+    width: 150px;
+}
+
+/*==========================
+    FORMULÁRIO
+==========================*/
+.form-container {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: var(--yellow);
+}
+
+.img-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-form > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    margin-left: 30%;
+    background-color: white;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.24);
+    width: 270px;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > p {
+    font-weight: 800;
+}
+
+fieldset {
+    font-size: 11px;
+    width: 80%;
+    padding: 0 6px 0 15px;
+    margin: 10px 0;
+    border: solid 1.5px #ccc;
+    border-radius: 10px;
+}
+
+fieldset:hover {
+    border: solid 1px black;
+}
+
+input, textarea {
+    font-size: 10px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+#msg {
+    height: 100px;
+    width: 220px;
+    font-size: 10px;
+    padding-bottom: 100px;
+    border: solid 0;
+}
+
+/*==========================
+    FORMULÁRIO ABOUT
+==========================*/
+.about-form form {
+    margin-left: 30%;
+    background-color: #FBE80E;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.24);
+    width: 270px;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-form form > p {
+    font-weight: 800;
+}
+
+.about-form fieldset {
+    font-size: 11px;
+    width: 60px;
+    padding: 0 6px 0 15px;
+    margin: 10px;
+    border: solid 1.5px #272727;
+    border-radius: 10px;
+}
+
+.about-form input {
+    font-size: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.about-form textarea {
+    font-size: 10px;
+    width: 100%;
+    border: solid 1px #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+#form-btn {
+    background-color: #65C306;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418);
+    font-size: 13px;
+    padding: 5px;
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/*==========================
+    Rodapé
+==========================*/
+footer { 
+    background-color: #fbe70e1c;
+    font-family: "Inter", sans-serif; /* Estilo da Fonte */
+    font-size: 13px; /* Tamanho da fonte */
+    bottom: 0; /* Posiciona no final da página */
+    height: 170px; /* Altura do rodapé */
+    width: 100%; /* Largura total do rodapé */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+footer > img {
+    width: 150px; /* Largura da imagem do rodapé */
+    padding-right: 30px; /* Margem direita */
+}
