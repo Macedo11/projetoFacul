@@ -2,144 +2,299 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* { /* Aplica estilo global a todas as tags */
-    font-family: "Inter", sans-serif; /* Fonte padrão */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove preenchimento interno padrão */
+/* Variáveis de cor */
+:root {
+    --yellow: #FBE80E;
+    --green: #55AA00;
+    --light-green: #72D60F;
+    --mostarda: #D3C203;
+}
+
+/* Estilo Global */
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: white;
 }
 
-/*Navbar*/
+h1, h2 {
+    color: var(--mostarda);
+}
 
+/* Navbar */
 nav {
     top: 0;
-    height: 50px; /* Altura da barra de navegação */
-    display: flex; /* Alinha elementos na barra de navegação */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #FBE80E; /* Cor de fundo da barra */
-    position: fixed; /* Fixar a barra no topo */
-    width: 100%; /* Ocupar toda a largura da tela */
-    z-index: 1000; /* Manter a barra acima de outros elementos */
-    justify-content: space-between; /* Espaça os itens de maneira adequada */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--yellow);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
 }
 
 nav img {
-    width: 170px; /* Largura da imagem (logo) */
+    width: 170px;
 }
 
 nav ul {
-    list-style: none; /* Remove marcadores da lista */
-    display: flex; /* Alinha itens da lista em linha */
-    flex-grow: 1; /* Permite que a lista ocupe o espaço restante */
-    justify-content: center; /* Centraliza os itens da lista horizontalmente */
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 nav li {
-    margin: 0 15px; /* Espaçamento entre itens da lista */
-    
+    margin: 0 15px;
 }
 
- li a {
+li a {
     text-decoration: none;
-    font-weight: bold; /* Texto em negrito */
+    font-weight: bold;
     color: black;
     transition: 0.5s;
 }
 
-li a:hover{
+li a:hover {
     color: rgb(82, 82, 82);
 }
 
 nav button {
-    margin-right: 30px; /* Espaçamento à direita do botão */
-    padding: 10px; /* Espaçamento interno do botão */
-    width: 90px; /* Largura do botão */
-    border: none; /* Remove borda padrão */
-    background-color: #65C306; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border-radius: 5px; /* Arredonda cantos do botão */
+    margin-right: 30px;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    background-color: var(--green);
+    color: white;
+    border-radius: 5px;
 }
-
 
 nav button:hover {
-    cursor: pointer; /* Muda cursor ao passar o mouse */
-    background-color: #509609; /* Muda cor ao passar o mouse */
+    cursor: pointer;
+    background-color: #509609;
 }
 
-/*Cabeçalho*/
-
+/* Cabeçalho */
 .cabecalho {
-    display: flex; /* Usa flexbox para alinhar os filhos em linha */
-    background-color: #FBE80E; /* Cor de fundo do cabeçalho */
-    width: auto;
-    min-height: 70vh; /* Altura mínima do cabeçalho */
-    align-items: center; /* Alinha verticalmente os itens ao centro */
-    padding: 20px; /* Adiciona um preenchimento interno para evitar que o texto fique colado nas bordas */
+    display: flex;
+    background-color: var(--yellow);
+    min-height: 70vh;
+    align-items: center;
+    padding: 20px;
     margin-bottom: -30px;
 }
 
-.texto h1, p {
+.texto h1, .texto p {
     padding: 20px;
 }
 
 .texto p {
-    font-size: 17px; /* Define o tamanho da fonte dos parágrafos */
+    font-size: 17px;
 }
 
-.texto h1, i {
+.texto h1, .texto i {
     color: black;
-    font-family: "Rubik", sans-serif; /* Define a fonte específica para h1 e i */
+    font-family: "Rubik", sans-serif;
 }
 
 .texto button {
-    padding: 15px; /* Adiciona um preenchimento interno ao botão */
-    margin: 15px; /* Adiciona uma margem ao redor do botão */
-    border: none; /* Remove a borda padrão do botão */
-    border-radius: 5px; /* Arredonda os cantos do botão */
+    padding: 15px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
 }
 
 #botao-1 {
-    padding: 15px 70px; /* Padding superior/inferior e direito/esquerdo para o botão 1 */
-    display: inline-block; /* Permite que o botão se comporte como um bloco, mantendo a centralização */
-    text-align: center; /* Centraliza o texto horizontalmente dentro do botão */
-    background-color: #65C306; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
-    font-size: 17px; /* Define o tamanho da fonte do botão */
+    padding: 15px 70px;
+    background-color: var(--green);
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
 }
 
 #botao-1:hover {
-    background-color: #54a306; /* Cor de fundo do botão quando o mouse passa sobre ele */
+    background-color: #54a306;
 }
 
 #botao-2 {
-    padding: 15px 70px; /* Padding superior/inferior e direito/esquerdo para o botão 2 */
-    display: inline-block; /* Permite que o botão se comporte como um bloco, mantendo a centralização */
-    text-align: center; /* Centraliza o texto horizontalmente dentro do botão */
-    background-color: transparent; /* Cor de fundo do botão */
-    border: 3px solid black; /* Define uma borda preta de 3 pixels para o botão */
-    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
-    font-size: 17px; /* Define o tamanho da fonte do botão */
+    padding: 15px 70px;
+    background-color: transparent;
+    border: 3px solid black;
+    cursor: pointer;
+    font-size: 17px;
 }
 
 #botao-2:hover {
-    background-color: #2929296c; /* Cor de fundo do botão 2 quando o mouse passa sobre ele */
-}
-
-.imagem {
-    background-color: transparent; /* Mantém o fundo transparente para o contêiner de imagem */
+    background-color: #2929296c;
 }
 
 .imagem img {
-    box-shadow: -29px 19px 33px -26px rgba(0,0,0,0.75); /* Adiciona sombra à imagem */
-    background-color: transparent; /* Mantém o fundo transparente para a imagem */
-    border-radius: 40px; /* Arredonda os cantos da imagem */
-    margin-left: 100px; /* Adiciona uma margem à esquerda da imagem */
+    box-shadow: -29px 19px 33px -26px rgba(0,0,0,0.75);
+    border-radius: 40px;
+    margin-left: 100px;
 }
 
+/* Cuidados */
+.cuidados {
+    background-color: #FFFABC;
+    padding: 40px;
+    text-align: center;
+    border-radius: 25px;
+}
 
+.div-cuidados {
+    display: flex;
+    align-items: center;
+    padding: 100px 20px;
+}
 
+.img-cuidados {
+    width: 500px;
+}
+
+.p-cuidados {
+    padding: 10px 25px;
+    line-height: 20px;
+}
+
+.txt-limpeza > p, .txt-pq-limpar > p {
+    text-align: left;
+}
+
+/* Calcular CEP */
+.container-cep {
+    margin-top: -30px;
+    background-color: #D2FFA6;
+    border-radius: 25px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-cep > p {
+    color: var(--light-green);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.container-cep .div-cep {
+    background-color: white;
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.342);
+    border-radius: 25px;
+    width: 450px;
+    height: 130px;
+    padding: 25px;
+    margin: 40px;
+}
+
+.div-cep > p {
+    color: #6A6A6A;
+    font-size: 14px;
+    padding: 18px;
+    text-align: left;
+}
+
+.calc-cep {
+    display: flex;
+    align-items: center;
+}
+
+.calc-cep > fieldset {
+    width: 70%;
+    height: 50px;
+    text-align: left;
+}
+
+.calc-cep > .btn-cep {
+    background-color: var(--light-green);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 90px;
+    height: 40px;
+}
+
+.btn-cep:hover {
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+/* Antes e Depois */
+.antes-depois {
+    margin: 70px;
+}
+
+.antes-depois > p {
+    color: var(--light-green);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 90px 30px;
+}
+
+.antes-depois > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.antes-depois > div > img {
+    max-width: 450px;
+    padding: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #fbe70e1c;
+    font-size: 13px;
+    height: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > img {
+    width: 150px;
+    padding-right: 30px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1000px) {
+    .cuidados {
+        padding: 30px 10px;
+    }
+    
+    .img-cuidados {
+        width: 350px;
+    }
+}
+
+@media (max-width: 840px) {
+    .antes-depois > p {
+        padding: 0 0 20px;
+    }
+
+    .antes-depois > div > img {
+        max-width: 280px;
+    }
+
+    .img-form {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .div-cuidados {
+        padding: 45px 5px;
+    }
+}
