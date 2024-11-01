@@ -47,6 +47,10 @@ fieldset {
     border-radius: 5px; /* Cantos arredondados */
 }
 
+fieldset:hover {
+    border: solid 1px black;
+}
+
 input, textarea {
     font-size: 12px; /* Tamanho da fonte */
     width: 100%; /* Largura total do input e textarea */
