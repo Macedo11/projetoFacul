@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*==========================
+    ESTILOS GLOBAIS
+==========================*/
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+.cabecalho-about h1, h2 {
+    color: #D3C203;
+}
+
+/*==========================
+    CABEÇALHO (NAVBAR)
+==========================*/
+nav {
+    top: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #FBE80E;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 170px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+}
+
+nav li a:hover {
+    color: rgb(82, 82, 82);
+}
+
+nav .botao {
+    margin-right: 30px;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    background-color: #6bca0d;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav .botao:hover {
+    cursor: pointer;
+    background-color: #509609;
+}
+
+/*==========================
+    SEÇÃO PRINCIPAL - CABEÇALHO ABOUT
+==========================*/
+.cabecalho-about {
+    position: relative;
+}
+
+.cabecalho-about img {
+    width: 100%;
+    display: block;
+}
+
+.cabecalho-about::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.cabecalho-about div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    width: 250px;
+    text-align: center;
+}
+
+.cabecalho-about h1 {
+    font-size: 50px;
+}
+
+/*==========================
+    SEÇÃO Container
+==========================*/
+.container {
+    padding: 80px;
+}
+
+.conteudo {
+    display: flex;
+    margin: 50px;
+}
+
+.container h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.conteudo img {
+    width: 450px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 125px;
+    box-shadow: 3px 10px 69px -25px rgba(0,0,0,0.75);
+}
+
+.txt {
+    padding: 30px;
+}
+
+.txt h3, p {
+    margin-bottom: 20px;
+}
+
+/*Colaboradores*/
+
+.colaboradores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.criadores {
+    display: flex;
+    margin: 50px;
+    border-right: 1px solid #e4d214;
+    border-width: 5px;
+}
+
+.criadores1 {
+    display: flex;
+    margin: 50px;
+    border-left: 1px solid #e4d214;
+    border-width: 5px;
+}
+
+.criadores img {
+    width: 250px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 125px;
+    box-shadow: 3px 10px 69px -25px rgba(0,0,0,0.75);
+}
+
+.criadores1 img {
+    width: 250px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 125px;
+    box-shadow: 3px 10px 69px -25px rgba(0,0,0,0.75);
+}
+
+
+
+
+/*==========================
+    Rodapé
+==========================*/
+footer { 
+    background-color: #fbe70e1c;
+    font-family: "Inter", sans-serif; /* Estilo da Fonte */
+    font-size: 13px; /* Tamanho da fonte */
+    bottom: 0; /* Posiciona no final da página */
+    height: 170px; /* Altura do rodapé */
+    width: 100%; /* Largura total do rodapé */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+footer > img {
+    width: 150px; /* Largura da imagem do rodapé */
+    padding-right: 30px; /* Margem direita */
+}
