@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* { /* Aplica estilo global a todas as tags */
+    font-family: "Inter", sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento interno padrão */
+}
+
+body {
+    background-color: white;
+}
+
+h1, h2 {
+    color: #D3C203; /* Cor para h1 e h2 */
+}
+
+/*Navbar*/
+
+nav {
+    top: 0;
+    height: 50px; /* Altura da barra de navegação */
+    display: flex; /* Alinha elementos na barra de navegação */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #FBE80E; /* Cor de fundo da barra */
+    position: fixed; /* Fixar a barra no topo */
+    width: 100%; /* Ocupar toda a largura da tela */
+    z-index: 1000; /* Manter a barra acima de outros elementos */
+    justify-content: space-between; /* Espaça os itens de maneira adequada */
+}
+
+nav img {
+    width: 170px; /* Largura da imagem (logo) */
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    display: flex; /* Alinha itens da lista em linha */
+    flex-grow: 1; /* Permite que a lista ocupe o espaço restante */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
+}
+
+nav li {
+    margin: 0 15px; /* Espaçamento entre itens da lista */
+    
+}
+
+ li a {
+    text-decoration: none;
+    font-weight: bold; /* Texto em negrito */
+    color: black;
+    transition: 0.5s;
+}
+
+li a:hover{
+    color: rgb(82, 82, 82);
+}
+
+nav button {
+    margin-right: 30px; /* Espaçamento à direita do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    width: 90px; /* Largura do botão */
+    border: none; /* Remove borda padrão */
+    background-color: #65C306; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border-radius: 5px; /* Arredonda cantos do botão */
+}
+
+
+nav button:hover {
+    cursor: pointer; /* Muda cursor ao passar o mouse */
+    background-color: #509609; /* Muda cor ao passar o mouse */
+}
+
+.cabecalho-cuidado {
+    position: relative; /* Define o contêiner como relativo para posicionar elementos filhos em relação a ele */
+}
+
+.cabecalho-cuidado img {
+    width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+    display: block; /* Remove o espaço em branco abaixo da imagem, causado pelo comportamento inline */
+}
+
+.cabecalho-cuidado::after {
+    content: ''; /* Cria um pseudo-elemento vazio */
+    position: absolute; /* Posiciona o pseudo-elemento sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece a imagem com um overlay semi-transparente */
+    z-index: 1; /* Coloca o overlay acima da imagem */
+}
+
+.cabecalho-cuidado div {
+    position: absolute; /* Posiciona o texto de forma absoluta sobre a imagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza a div no centro da imagem */
+    color: white; /* Define a cor do texto como branco */
+    z-index: 2; /* Coloca o texto acima do overlay */
+    width: 250px; /* Define uma largura fixa para a div */
+    text-align: center; /* Centraliza o texto dentro da div */
+}
+
+.cabecalho-cuidado h1 {
+    font-size: 50px; /* Define o tamanho da fonte para o título */
+}
+
+/* CUIDADO */
+.cuidado {
+    background-color: #FFFABC; /* Cor de fundo */
+    padding: 40px; /* Preenchimento interno */
+    width: auto;
+    text-align: center; /* Alinhamento do texto */
+    border-radius: 25px; /* Cantos arredondados */
+}
+
+.cuidado h1 {
+    font-size: 30px;
+}
+
+.cuidado article {
+    margin-top: 40px;
+}
+
+.div-cuidado {
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical dos itens */
+    padding: 50px; /* Preenchimento interno */
+}
+
+.img-cuidado {
+    width: 500px; /* Largura da imagem */
+    border-radius: 19px 60px 19px 58px;
+    border: 4px solid #ffe96b;
+    box-shadow: -1px 2px 27px -10px rgba(0,0,0,0.75);
+}
+
+.p-cuidado {
+    padding: 10px 25px; /* Preenchimento interno */
+    line-height: 20px; /* Altura da linha */
+}
+
+.txt-limpeza > p, .txt-pq-limpar > p {
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+/* RODAPÉ */
+footer { 
+    background-color: #fbe70e1c;
+    font-family: "Inter", sans-serif; /* Estilo da Fonte */
+    font-size: 13px; /* Tamanho da fonte */
+    bottom: 0; /* Posiciona no final da página */
+    height: 170px; /* Altura do rodapé */
+    width: 100%; /* Largura total do rodapé */
+    display: flex; /* Layout flexível */
+    align-items: center; /* Alinhamento vertical */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+footer > img {
+    width: 150px; /* Largura da imagem do rodapé */
+    padding-right: 30px; /* Margem direita */
+}
