@@ -130,6 +130,7 @@ nav .botao:hover {
 .container h1 {
     padding: 20px;
     text-align: center;
+    font-size: 35px;
 }
 
 .conteudo img {
@@ -156,6 +157,7 @@ nav .botao:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .criadores {
@@ -163,9 +165,12 @@ nav .botao:hover {
     margin: 50px;
     border-right: 1px solid #e4d214;
     border-width: 5px;
+    border-radius: 10px
 }
 
 .criadores1 {
+    background-color: #f7f7f7;
+    border-radius: 10px;
     display: flex;
     margin: 50px;
     border-left: 1px solid #e4d214;
