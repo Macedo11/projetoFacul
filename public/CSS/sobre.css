@@ -60,17 +60,19 @@ nav li a:hover {
     color: rgb(82, 82, 82);
 }
 
-nav button {
+nav .botao {
     margin-right: 30px;
     padding: 10px;
     width: 90px;
     border: none;
-    background-color: #65C306;
+    background-color: var(--green);
     color: white;
     border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
 }
 
-nav button:hover {
+nav .botao:hover {
     cursor: pointer;
     background-color: #509609;
 }

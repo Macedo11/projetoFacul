@@ -57,19 +57,21 @@ li a:hover{
     color: rgb(82, 82, 82);
 }
 
-nav button {
-    margin-right: 30px; /* Espaçamento à direita do botão */
-    padding: 10px; /* Espaçamento interno do botão */
-    width: 90px; /* Largura do botão */
-    border: none; /* Remove borda padrão */
-    background-color: #65C306; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border-radius: 5px; /* Arredonda cantos do botão */
+nav .botao {
+    margin-right: 30px;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    background-color: var(--green);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
 }
 
-nav button:hover {
-    cursor: pointer; /* Muda cursor ao passar o mouse */
-    background-color: #509609; /* Muda cor ao passar o mouse */
+nav .botao:hover {
+    cursor: pointer;
+    background-color: #509609;
 }
 
 /*Formulário*/
