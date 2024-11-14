@@ -19,3 +19,7 @@ sr.reveal('.img-3', {delay: 350})
 
 /* perguntas e respostas */
 sr.reveal('.perguntas', {delay: 100})
+
+/* sobre nós */
+sr.reveal('.cabecalho-about h1', {duration: 500, rotate: {z: 0, x:0, y:300}})
+sr.reveal('.about', {delay: 50})

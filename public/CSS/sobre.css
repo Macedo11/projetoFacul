@@ -113,6 +113,7 @@ nav .botao:hover {
 
 .cabecalho-about h1 {
     font-size: 50px;
+    visibility: hidden;
 }
 
 /*==========================
@@ -121,6 +122,7 @@ nav .botao:hover {
 .about {
     display: flex;
     padding: 50px;
+    visibility: hidden;
 }
 
 .about .form-div {
