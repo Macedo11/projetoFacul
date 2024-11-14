@@ -113,6 +113,7 @@ nav .botao:hover {
 
 .cabecalho-about h1 {
     font-size: 50px;
+    visibility: hidden;
 }
 
 /*==========================
@@ -125,6 +126,7 @@ nav .botao:hover {
 .conteudo {
     display: flex;
     margin: 50px;
+    visibility: hidden;
 }
 
 .container h1 {
@@ -165,7 +167,8 @@ nav .botao:hover {
     margin: 50px;
     border-right: 1px solid #e4d214;
     border-width: 5px;
-    border-radius: 10px
+    border-radius: 10px;
+    visibility: hidden;
 }
 
 .criadores1 {
@@ -175,6 +178,7 @@ nav .botao:hover {
     margin: 50px;
     border-left: 1px solid #e4d214;
     border-width: 5px;
+    visibility: hidden;
 }
 
 .criadores img {

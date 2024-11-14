@@ -33,3 +33,9 @@ sr.reveal('.img-cuidado', {delay: 350})
 sr.reveal('header h1', {duration: 1000})
 sr.reveal('.telefone', {duration: 1000, rotate: {z: 0, x:0, y:300} })
 sr.reveal('#contato', {duration: 1000, delay: 150})
+
+/*Criadores */
+sr.reveal('.cabecalho-about h1 ', {duration: 1000})
+sr.reveal('.conteudo', {duration: 1000, rotate: {z: 0, x:0, y:300} })
+sr.reveal('.criadores1', {duration: 1000, rotate: {z: 0, x:0, y:300} })
+sr.reveal('.criadores', {duration: 1000, rotate: {z: 0, x:0, y:-300} })
