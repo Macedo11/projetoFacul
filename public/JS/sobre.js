@@ -14,7 +14,7 @@ const formSobre = (event) => {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({name, email, msg}),
-    }).then(() => alert('Dados enviados!'));
+    }).then(() => alert('Obrigado pelo interesse, vamos entrar em contato em breve!'));
 }
 
 document.querySelector('#formSobre').addEventListener('submit', formSobre);

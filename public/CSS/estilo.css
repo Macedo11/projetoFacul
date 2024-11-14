@@ -99,6 +99,7 @@ nav .botao:hover {
 
 .texto p {
     font-size: 17px;
+    margin-bottom: 15px;
 }
 
 .texto h1, .texto i {
@@ -106,7 +107,7 @@ nav .botao:hover {
     font-family: "Rubik", sans-serif;
 }
 
-.texto button {
+.texto a {
     padding: 15px;
     margin: 15px;
     border: none;
@@ -114,11 +115,12 @@ nav .botao:hover {
 }
 
 #botao-1 {
-    padding: 15px 70px;
+    padding: 18px 70px;
     background-color: var(--green);
     color: white;
     cursor: pointer;
     font-size: 17px;
+    text-decoration: none;
 }
 
 #botao-1:hover {
@@ -131,6 +133,8 @@ nav .botao:hover {
     border: 3px solid black;
     cursor: pointer;
     font-size: 17px;
+    text-decoration: none;
+    color: inherit;
 }
 
 #botao-2:hover {
