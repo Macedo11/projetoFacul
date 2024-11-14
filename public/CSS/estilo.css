@@ -345,6 +345,27 @@ nav .botao:hover {
     padding: 15px;
   }
 
+/*Final*/
+.img-form {
+    height: 100vh;
+    background-image: url("../IMG/sofa-aspirador.png");
+    background-color: rgba(0, 0, 0, 0.719); /* Ajuste o valor de 0.5 para controlar o nível de escuridão */
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.txt {
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.877);
+    border-radius: 50px;
+    visibility: hidden;
+}
+
+.txt p {
+    font-size: 20px;
+    margin: 20px;
+}
+
 /* Rodapé */
 footer {
     background-color: #fbe70e1c;

@@ -36,7 +36,7 @@
                 <p>Proporcionando limpeza especializada e um ambiente mais saudável para você e sua família.</p>
                 <!-- Parágrafo incentivando a contratação rápida do serviço -->
                 
-                <a href="cuidado.html" id="botao-1">Faça um orçamento</a>
+                <a href="javascript:void(0);" id="botao-1">Faça um orçamento</a>
                 <!-- Primeiro botão com texto chamativo para solicitar um orçamento -->
                 
                 <a href="cuidado.html" id="botao-2">Dicas e cuidados</a>
@@ -129,7 +129,7 @@
                         <label for="cep"></label> <!-- Label associado ao campo de entrada -->
                         <input type="number" name="cep" id="cep" placeholder="00000-000"> <!-- Campo de entrada para o CEP -->
                     </fieldset>
-                    <input type="button" value="Buscar" class="btn-cep"> <!-- Botão para buscar o CEP -->
+                    <input type="button" value="Buscar" class="btn-cep" onclick="consumoApi()"> <!-- Botão para buscar o CEP -->
                 </div>
             </div>
         </section>
@@ -187,7 +187,15 @@
         
         <section class="form-container"> <!-- FORMULÁRIO -->
             <div class="img-form"> <!-- Container para a imagem ao lado do formulário -->
-                <img src="./public/IMG/sofa-aspirador.png" alt=""> <!-- Imagem relacionada ao formulário -->
+                <div class="txt">
+                    <h1>Serviços</h1>
+                    <hr>
+                    <p>Sofá Simples de 2 Lugares: <b>R$ 150,00</b></p>
+                    <p>Sofá Retrátil de 2 Lugares: <b>a partir de R$ 180,00</b></p>
+                    <p>Sofá Retrátil de 3 Lugares: <b>a partir de R$ 220,00</b></p>
+                    <p>Bancos Traseiros e Dianteiros de Carro: <b>a partir de R$ 150,00</b></p>
+                    <p>Colchões: <b>a partir de R$ 140,00</b></p>
+                </div>
             </div>
             <div class="form-div"> <!-- Container para o formulário de contato -->
                 <form action="#"> <!-- Início do formulário -->
@@ -231,5 +239,35 @@
               faqItem.classList.toggle('active');
             });
           });
+
+          document.getElementById("botao-1").addEventListener("click", function() {
+            document.querySelector(".form-container").scrollIntoView({
+                behavior: "smooth" // Rola suavemente até o elemento
+            });
+        });
+
+
+        
+
+        async function consumoApi() {
+            var campoInput = document.getElementById('cep').value
+            var url = await `https://viacep.com.br/ws/${campoInput}/json/`
+            var req = await fetch(url)
+            
+
+            
+
+            if(req.status == 404) {
+                alert("CEP não encontrado")
+            } else {
+                var data = await req.json()
+                alert(`Sim fazemos entregas para bairro ${data.bairro} - ${data.uf} sem problemas`)
+            }
+            
+        }
+
+        
+
+
     </script>
 </html>

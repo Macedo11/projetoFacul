@@ -8,6 +8,9 @@ sr.reveal('#imagem-cabecalho', {delay: 250})
 sr.reveal('.div-cuidados', {duration: 1000, rotate: {z: 0, x:0, y:300}});
 sr.reveal('.p-cuidados', {delay: 250})
 sr.reveal('.img-cuidados', {delay: 350})
+sr.reveal('.txt', {duration: 500, rotate: {z: 0, x:0, y:300}})
+
+
 
 /* cep */
 sr.reveal('.div-cep', {duration: 800, rotate: {z: 0, x:0, y:300}})
