@@ -23,6 +23,7 @@ body {
 
 h1, h2 {
     color: var(--mostarda);
+    font-size: 40px;
 }
 
 /* Navbar */
@@ -146,26 +147,36 @@ nav .botao:hover {
 .cuidados {
     background-color: #FFFABC;
     padding: 40px;
-    text-align: center;
     border-radius: 25px;
+}
+
+.title {
+    text-align: center;
 }
 
 .div-cuidados {
     display: flex;
     align-items: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
 .img-cuidados {
     width: 500px;
 }
 
-.p-cuidados {
+.txt-modelo {
     padding: 10px 25px;
-    line-height: 20px;
 }
 
-.txt-limpeza > p, .txt-pq-limpar > p {
+.p-cuidados {
+    color: rgb(51, 51, 51);
+    padding-bottom: 25px;
+    line-height: 35px;
+    font-size: 19px;
+}
+
+
+.txt-limpeza p, .txt-pq-limpar p {
     text-align: left;
 }
 
@@ -181,7 +192,7 @@ nav .botao:hover {
     align-items: center;
 }
 
-.container-cep > p {
+.container-cep p {
     color: var(--light-green);
     font-weight: 700;
     text-decoration: underline;
@@ -197,7 +208,7 @@ nav .botao:hover {
     margin: 40px;
 }
 
-.div-cep > p {
+.div-cep p {
     color: #6A6A6A;
     font-size: 14px;
     padding: 18px;
@@ -209,13 +220,13 @@ nav .botao:hover {
     align-items: center;
 }
 
-.calc-cep > fieldset {
+.calc-cep fieldset {
     width: 70%;
     height: 50px;
     text-align: left;
 }
 
-.calc-cep > .btn-cep {
+.calc-cep .btn-cep {
     background-color: var(--light-green);
     color: white;
     font-size: 12px;
@@ -236,23 +247,88 @@ nav .botao:hover {
     margin: 70px;
 }
 
-.antes-depois > p {
+.antes-depois h1 {
     color: var(--light-green);
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 700;
     padding: 0 90px 30px;
 }
 
-.antes-depois > div {
+.antes-depois div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.antes-depois > div > img {
+.antes-depois div img {
     max-width: 450px;
     padding: 10px;
 }
+
+/*Perguntas*/
+.perguntas {
+    padding: 80px;
+}
+
+.p-perguntas {
+    color: rgb(51, 51, 51);
+    padding-bottom: 25px;
+    line-height: 40px;
+    font-size: 19px;
+}
+
+.p-perguntas h1{
+    margin-bottom: 30px;
+}
+
+/*Perguntas*/
+.faq-container {
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-item {
+    border-top: 1px solid #ddd;
+  }
+
+  .faq-item:first-child {
+    border-top: none;
+  }
+
+  .faq-question {
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: #918505;
+  }
+
+  .faq-question i {
+    margin-right: 15px;
+  }
+
+  .faq-question:hover {
+    background-color: #e9e9e9;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background-color: #fff;
+    font-size: 0.95em;
+    color: #333;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+  }
+
+  /* Classe para expandir a resposta */
+  .faq-item.active .faq-answer {
+    max-height: 200px; /* Ajuste conforme o conteúdo */
+    padding: 15px;
+  }
 
 /* Rodapé */
 footer {
@@ -265,7 +341,7 @@ footer {
     justify-content: center;
 }
 
-footer > img {
+footer img {
     width: 150px;
     padding-right: 30px;
 }
@@ -282,11 +358,11 @@ footer > img {
 }
 
 @media (max-width: 840px) {
-    .antes-depois > p {
+    .antes-depois p {
         padding: 0 0 20px;
     }
 
-    .antes-depois > div > img {
+    .antes-depois div img {
         max-width: 280px;
     }
 
