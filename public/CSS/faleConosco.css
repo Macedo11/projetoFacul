@@ -81,6 +81,7 @@ header {
 
 header h1 {
     color: rgb(59, 59, 59);
+    visibility: hidden;
 }
 
 article {
@@ -182,6 +183,10 @@ input {
 
 .conteudo, p, h3, button {
     margin-bottom: 15px;
+}
+
+.telefone {
+    visibility: hidden;
 }
 
 .telefone p {

@@ -28,3 +28,8 @@ sr.reveal('.about', {delay: 50})
 sr.reveal('.cabecalho-cuidado h1', {duration: 500, rotate: {z: 0, x:0, y:300}})
 sr.reveal('.div-cuidado', {duration: 1000, rotate: {z: 0, x:0, y:80}});
 sr.reveal('.img-cuidado', {delay: 350})
+
+/* Fale conosco */
+sr.reveal('header h1', {duration: 1000})
+sr.reveal('.telefone', {duration: 1000, rotate: {z: 0, x:0, y:300} })
+sr.reveal('#contato', {duration: 1000, delay: 150})
