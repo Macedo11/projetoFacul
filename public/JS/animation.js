@@ -39,3 +39,6 @@ sr.reveal('.cabecalho-about h1 ', {duration: 1000})
 sr.reveal('.conteudo', {duration: 1000, rotate: {z: 0, x:0, y:300} })
 sr.reveal('.criadores1', {duration: 1000, rotate: {z: 0, x:0, y:300} })
 sr.reveal('.criadores', {duration: 1000, rotate: {z: 0, x:0, y:-300} })
+
+/* login */
+sr.reveal('form', {duration: 1000})

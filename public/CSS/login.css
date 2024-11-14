@@ -14,7 +14,11 @@
 }
 
 body {
-    background-color: lightgray;
+    background-image: url("../IMG/IA.webp");
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste o valor de 0.5 para controlar o nível de escuridão */
+    background-blend-mode: multiply;
+    background-size: cover;
+    width: 98.5%;
 }
 
 /*Navbar*/
