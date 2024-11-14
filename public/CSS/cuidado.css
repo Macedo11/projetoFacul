@@ -108,6 +108,7 @@ nav .botao:hover {
 
 .cabecalho-cuidado h1 {
     font-size: 50px; /* Define o tamanho da fonte para o título */
+    visibility: hidden;
 }
 
 /* CUIDADO */

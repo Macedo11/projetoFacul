@@ -23,3 +23,8 @@ sr.reveal('.perguntas', {delay: 100})
 /* sobre nós */
 sr.reveal('.cabecalho-about h1', {duration: 500, rotate: {z: 0, x:0, y:300}})
 sr.reveal('.about', {delay: 50})
+
+/* Cuidados */
+sr.reveal('.cabecalho-cuidado h1', {duration: 500, rotate: {z: 0, x:0, y:300}})
+sr.reveal('.div-cuidado', {duration: 1000, rotate: {z: 0, x:0, y:80}});
+sr.reveal('.img-cuidado', {delay: 350})
